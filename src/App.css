@@ -1,0 +1,147 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fce4ec;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.App {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.App-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.App-content {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.App-sidebar {
+  width: 25%;
+  padding: 20px;
+  background-color: #f8bbd0;
+  border-right: 1px solid #f48fb1;
+  border-radius: 15px;
+}
+
+.App-sidebar.centered {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-main {
+  width: 75%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+.App-footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  color: #888;
+}
+
+h1 {
+  color: #ad1457;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #ec407a;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.1s;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #d81b60;
+  transform: translateY(-2px);
+}
+
+input, textarea {
+  width: calc(100% - 20px);
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #f48fb1;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #495057;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+li {
+  background-color: #f8bbd0;
+  color: #ad1457;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #f48fb1;
+}
+
+li:nth-child(even) {
+  background-color: #fce4ec;
+}
+
+li h3 {
+  margin: 0;
+}
+
+li p {
+  margin: 5px 0;
+}
+
+.error {
+  color: red;
+}
+
+.pagination, .filters {
+  margin: 20px 0;
+}
+
+.pagination button, .filters button {
+  padding: 10px 20px;
+  margin: 5px;
+}
